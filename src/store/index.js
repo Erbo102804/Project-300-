@@ -2,12 +2,14 @@ import { createStore, combineReducers } from 'redux';
 import carsReducer from './reducers/carsReducer';
 import cartReducer from './reducers/cartReducer';
 import testDriveReducer from './reducers/testDriveReducer';
+import authReducer from './reducers/authReducer';
 
 // Объединяем все редьюсеры в один корневой
 const rootReducer = combineReducers({
-  cars: carsReducer,         // состояние каталога автомобилей
-  cart: cartReducer,         // состояние корзины и заказов
+  cars: carsReducer,           // состояние каталога автомобилей
+  cart: cartReducer,           // состояние корзины и заказов
   testDrive: testDriveReducer, // состояние тест-драйвов
+  auth: authReducer,           // состояние авторизации
 });
 
 // Создаём хранилище Redux
