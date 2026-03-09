@@ -12,7 +12,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Седан',
     inStock: true,
-    image: '/images/toyota-camry.svg',
+    image: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=600&h=375&fit=crop&auto=format',
     description: 'Надёжный семейный седан с отличным оснащением',
   },
   {
@@ -27,7 +27,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Внедорожник',
     inStock: true,
-    image: '/images/bmw-x5.svg',
+    image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=375&fit=crop&auto=format',
     description: 'Премиальный внедорожник с мощным двигателем',
   },
   {
@@ -42,7 +42,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Кроссовер',
     inStock: true,
-    image: '/images/hyundai-tucson.svg',
+    image: 'https://images.unsplash.com/photo-1519641471613-1e82aced17a3?w=600&h=375&fit=crop&auto=format',
     description: 'Современный кроссовер с богатым оснащением',
   },
   {
@@ -57,7 +57,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Седан',
     inStock: true,
-    image: '/images/mercedes-e-class.svg',
+    image: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=375&fit=crop&auto=format',
     description: 'Эталон немецкого премиума и комфорта',
   },
   {
@@ -72,7 +72,7 @@ const initialCars = [
     transmission: 'Механика',
     bodyType: 'Кроссовер',
     inStock: true,
-    image: '/images/kia-sportage.svg',
+    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=375&fit=crop&auto=format',
     description: 'Стильный и практичный городской кроссовер',
   },
   {
@@ -87,7 +87,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Кроссовер',
     inStock: true,
-    image: '/images/vw-tiguan.svg',
+    image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=600&h=375&fit=crop&auto=format',
     description: 'Немецкое качество в популярном кроссовере',
   },
   {
@@ -102,7 +102,7 @@ const initialCars = [
     transmission: 'Механика',
     bodyType: 'Седан',
     inStock: true,
-    image: '/images/lada-vesta.svg',
+    image: 'https://images.unsplash.com/photo-1590362891991-f776e747a588?w=600&h=375&fit=crop&auto=format',
     description: 'Доступный и практичный российский автомобиль',
   },
   {
@@ -117,7 +117,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Внедорожник',
     inStock: false,
-    image: '/images/audi-q7.svg',
+    image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&h=375&fit=crop&auto=format',
     description: 'Люксовый семиместный внедорожник quattro',
   },
 ];
