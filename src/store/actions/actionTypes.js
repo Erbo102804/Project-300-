@@ -10,3 +10,7 @@ export const CLEAR_CART = 'CLEAR_CART';
 
 // Типы действий для заказов
 export const PLACE_ORDER = 'PLACE_ORDER';
+
+// Типы действий для тест-драйва
+export const BOOK_TEST_DRIVE = 'BOOK_TEST_DRIVE';
+export const CANCEL_TEST_DRIVE = 'CANCEL_TEST_DRIVE';

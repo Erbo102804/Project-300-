@@ -3,6 +3,7 @@ import Header from './components/Header';
 import CarList from './components/CarList';
 import Cart from './components/Cart';
 import Orders from './components/Orders';
+import TestDrives from './components/TestDrives';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         {activePage === 'catalog' && <CarList />}
         {activePage === 'cart' && <Cart onNavigate={setActivePage} />}
         {activePage === 'orders' && <Orders onNavigate={setActivePage} />}
+        {activePage === 'testdrives' && <TestDrives onNavigate={setActivePage} />}
       </main>
       <footer className="footer">
         <p>&copy; 2024 АвтоСалон Premium &middot; Все права защищены</p>

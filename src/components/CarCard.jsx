@@ -1,10 +1,13 @@
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from '../store/actions/cartActions';
+import TestDriveModal from './TestDriveModal';
 
 function CarCard({ car }) {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.items);
   const isInCart = cartItems.some((item) => item.id === car.id);
+  const [showModal, setShowModal] = useState(false);
 
   const handleCartToggle = () => {
     if (isInCart) {
@@ -53,15 +56,26 @@ function CarCard({ car }) {
 
         <div className="car-footer">
           <span className="car-price">{formatPrice(car.price)}</span>
-          <button
-            className={`cart-btn ${isInCart ? 'in-cart' : ''}`}
-            onClick={handleCartToggle}
-            disabled={!car.inStock}
-          >
-            {isInCart ? 'Убрать' : 'Выбрать'}
-          </button>
+          <div className="car-actions">
+            <button
+              className="test-drive-btn"
+              onClick={() => setShowModal(true)}
+              disabled={!car.inStock}
+            >
+              Тест-драйв
+            </button>
+            <button
+              className={`cart-btn ${isInCart ? 'in-cart' : ''}`}
+              onClick={handleCartToggle}
+              disabled={!car.inStock}
+            >
+              {isInCart ? 'Убрать' : 'Выбрать'}
+            </button>
+          </div>
         </div>
       </div>
+
+      {showModal && <TestDriveModal car={car} onClose={() => setShowModal(false)} />}
     </div>
   );
 }

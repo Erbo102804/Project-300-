@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 function Header({ activePage, onNavigate }) {
   const cartItems = useSelector((state) => state.cart.items);
   const orders = useSelector((state) => state.cart.orders);
+  const testDrives = useSelector((state) => state.testDrive.bookings);
 
   return (
     <header className="header">
@@ -34,6 +35,15 @@ function Header({ activePage, onNavigate }) {
           Мои заказы
           {orders.length > 0 && (
             <span className="badge orders-badge">{orders.length}</span>
+          )}
+        </button>
+        <button
+          className={`nav-btn ${activePage === 'testdrives' ? 'active' : ''}`}
+          onClick={() => onNavigate('testdrives')}
+        >
+          Тест-драйвы
+          {testDrives.length > 0 && (
+            <span className="badge td-badge">{testDrives.length}</span>
           )}
         </button>
       </nav>

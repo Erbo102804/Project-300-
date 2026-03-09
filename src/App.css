@@ -598,6 +598,283 @@ body {
   font-size: 13px;
 }
 
+/* ===== КНОПКА ТЕСТ-ДРАЙВ В КАРТОЧКЕ ===== */
+.car-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.test-drive-btn {
+  padding: 9px 14px;
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.test-drive-btn:hover:not(:disabled) {
+  background: var(--accent);
+  color: white;
+}
+
+.test-drive-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* ===== МОДАЛЬНОЕ ОКНО ТЕСТ-ДРАЙВА ===== */
+.modal-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.modal-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.modal-close:hover { background: var(--bg); }
+
+.modal {
+  position: relative;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.modal-form input,
+.modal-form textarea {
+  padding: 10px 14px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  color: var(--text);
+}
+
+.modal-form input:focus,
+.modal-form textarea:focus {
+  border-color: var(--primary-light);
+}
+
+.modal-form textarea {
+  resize: vertical;
+}
+
+.modal-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.modal-btn {
+  padding: 10px 24px;
+  background: var(--primary-light);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modal-btn:hover { background: var(--primary); }
+
+.modal-btn-outline {
+  background: white;
+  color: var(--text);
+  border: 2px solid var(--border);
+}
+
+.modal-btn-outline:hover {
+  background: white;
+  border-color: var(--primary-light);
+  color: var(--primary-light);
+}
+
+.modal-success {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.modal-success-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--success);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.modal-success h2 {
+  font-size: 22px;
+  color: var(--primary);
+}
+
+.modal-success p {
+  font-size: 15px;
+  color: var(--text);
+}
+
+.modal-success-sub {
+  font-size: 13px;
+  color: var(--text-muted) !important;
+}
+
+/* ===== СТРАНИЦА ТЕСТ-ДРАЙВОВ ===== */
+.td-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.td-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  box-shadow: var(--shadow);
+}
+
+.td-car-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.td-car-image {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f0f2f5;
+}
+
+.td-car-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.td-car-year {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.td-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+  margin-bottom: 14px;
+}
+
+.td-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.td-detail-full {
+  grid-column: 1 / -1;
+}
+
+.td-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.td-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.td-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.td-status {
+  background: #fff8e1;
+  color: #e67e22;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.td-cancel-btn {
+  padding: 8px 18px;
+  background: white;
+  color: var(--danger);
+  border: 2px solid var(--danger);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.td-cancel-btn:hover {
+  background: var(--danger);
+  color: white;
+}
+
+.td-badge { background: #e67e22 !important; }
+
 /* ===== АДАПТИВ ===== */
 @media (max-width: 640px) {
   .header { padding: 0 16px; }
