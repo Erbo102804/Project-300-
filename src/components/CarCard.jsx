@@ -23,7 +23,12 @@ function CarCard({ car }) {
   return (
     <div className={`car-card ${!car.inStock ? 'out-of-stock' : ''}`}>
       <div className="car-image-wrapper">
-        <img src={car.image} alt={`${car.brand} ${car.model}`} className="car-image" />
+        <img
+          src={car.image}
+          alt={`${car.brand} ${car.model}`}
+          className="car-image"
+          onError={(e) => { e.target.onerror = null; e.target.src = car.fallback; }}
+        />
         {!car.inStock && <div className="stock-badge">Нет в наличии</div>}
       </div>
 

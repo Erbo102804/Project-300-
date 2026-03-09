@@ -13,6 +13,7 @@ const initialCars = [
     bodyType: 'Седан',
     inStock: true,
     image: 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=600&h=375&fit=crop&auto=format',
+    fallback: '/images/toyota-camry.svg',
     description: 'Надёжный семейный седан с отличным оснащением',
   },
   {
@@ -28,6 +29,7 @@ const initialCars = [
     bodyType: 'Внедорожник',
     inStock: true,
     image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=375&fit=crop&auto=format',
+    fallback: '/images/bmw-x5.svg',
     description: 'Премиальный внедорожник с мощным двигателем',
   },
   {
@@ -42,7 +44,8 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Кроссовер',
     inStock: true,
-    image: 'https://images.unsplash.com/photo-1519641471613-1e82aced17a3?w=600&h=375&fit=crop&auto=format',
+    image: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600&h=375&fit=crop&auto=format',
+    fallback: '/images/hyundai-tucson.svg',
     description: 'Современный кроссовер с богатым оснащением',
   },
   {
@@ -58,6 +61,7 @@ const initialCars = [
     bodyType: 'Седан',
     inStock: true,
     image: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&h=375&fit=crop&auto=format',
+    fallback: '/images/mercedes-e-class.svg',
     description: 'Эталон немецкого премиума и комфорта',
   },
   {
@@ -73,6 +77,7 @@ const initialCars = [
     bodyType: 'Кроссовер',
     inStock: true,
     image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=375&fit=crop&auto=format',
+    fallback: '/images/kia-sportage.svg',
     description: 'Стильный и практичный городской кроссовер',
   },
   {
@@ -88,6 +93,7 @@ const initialCars = [
     bodyType: 'Кроссовер',
     inStock: true,
     image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=600&h=375&fit=crop&auto=format',
+    fallback: '/images/vw-tiguan.svg',
     description: 'Немецкое качество в популярном кроссовере',
   },
   {
@@ -103,6 +109,7 @@ const initialCars = [
     bodyType: 'Седан',
     inStock: true,
     image: 'https://images.unsplash.com/photo-1590362891991-f776e747a588?w=600&h=375&fit=crop&auto=format',
+    fallback: '/images/lada-vesta.svg',
     description: 'Доступный и практичный российский автомобиль',
   },
   {
@@ -118,6 +125,7 @@ const initialCars = [
     bodyType: 'Внедорожник',
     inStock: false,
     image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&h=375&fit=crop&auto=format',
+    fallback: '/images/audi-q7.svg',
     description: 'Люксовый семиместный внедорожник quattro',
   },
 ];
