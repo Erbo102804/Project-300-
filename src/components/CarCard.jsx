@@ -18,7 +18,7 @@ function CarCard({ car }) {
   };
 
   const formatPrice = (price) =>
-    price.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 });
+    price.toLocaleString('ru-RU', { maximumFractionDigits: 0 }) + ' сом';
 
   return (
     <div className={`car-card ${!car.inStock ? 'out-of-stock' : ''}`}>

@@ -4,7 +4,7 @@ function Orders({ onNavigate }) {
   const orders = useSelector((state) => state.cart.orders);
 
   const formatPrice = (price) =>
-    price.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 });
+    price.toLocaleString('ru-RU', { maximumFractionDigits: 0 }) + ' сом';
 
   const formatDate = (iso) =>
     new Date(iso).toLocaleString('ru-RU', { dateStyle: 'medium', timeStyle: 'short' });

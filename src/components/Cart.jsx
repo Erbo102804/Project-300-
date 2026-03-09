@@ -11,7 +11,7 @@ function Cart({ onNavigate }) {
   const totalPrice = cartItems.reduce((sum, car) => sum + car.price, 0);
 
   const formatPrice = (price) =>
-    price.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 });
+    price.toLocaleString('ru-RU', { maximumFractionDigits: 0 }) + ' сом';
 
   const handleOrder = (e) => {
     e.preventDefault();
