@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a18"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8F8F8"/>
+      <stop offset="100%" stop-color="#D8D8D8"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EEEEEE"/>
+      <stop offset="100%" stop-color="#CCCCCC"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="250" fill="url(#bg)"/>
+  <!-- Ground -->
+  <rect x="0" y="200" width="400" height="50" fill="#0d0d1a"/>
+  <!-- Shadow -->
+  <ellipse cx="200" cy="201" rx="160" ry="7" fill="rgba(0,0,0,0.6)"/>
+  <!-- Lower body -->
+  <rect x="42" y="148" width="316" height="52" rx="10" fill="url(#body)" stroke="#BBBBBB" stroke-width="1"/>
+  <!-- Cabin -->
+  <path d="M 105,148 L 122,108 L 278,108 L 298,148 Z" fill="url(#roof)" stroke="#BBBBBB" stroke-width="1"/>
+  <!-- Windows -->
+  <path d="M 122,146 L 134,113 L 197,113 L 197,146 Z" fill="#A8D8F0" opacity="0.85" stroke="#7BBAD4" stroke-width="1"/>
+  <path d="M 202,146 L 202,113 L 268,113 L 282,146 Z" fill="#A8D8F0" opacity="0.85" stroke="#7BBAD4" stroke-width="1"/>
+  <!-- B-pillar -->
+  <rect x="197" y="112" width="6" height="36" fill="#CCCCCC"/>
+  <!-- Door line -->
+  <line x1="197" y1="148" x2="197" y2="198" stroke="#C8C8C8" stroke-width="1.5"/>
+  <!-- Door handle front -->
+  <rect x="250" y="165" width="22" height="5" rx="2" fill="#AAAAAA"/>
+  <!-- Door handle rear -->
+  <rect x="135" y="165" width="22" height="5" rx="2" fill="#AAAAAA"/>
+  <!-- Headlights -->
+  <path d="M 352,152 L 358,152 L 358,163 L 352,163 Z" rx="2" fill="#FFFFBB" opacity="0.95"/>
+  <path d="M 345,155 L 353,155 L 353,161 L 345,161 Z" fill="#FFFFDD" opacity="0.7"/>
+  <!-- Taillights -->
+  <rect x="42" y="153" width="11" height="14" rx="2" fill="#FF3333" opacity="0.9"/>
+  <rect x="44" y="157" width="7" height="6" rx="1" fill="#FF6666" opacity="0.7"/>
+  <!-- Front wheel -->
+  <circle cx="298" cy="198" r="34" fill="#111111"/>
+  <circle cx="298" cy="198" r="24" fill="#1E1E1E"/>
+  <circle cx="298" cy="198" r="14" fill="#D0D0D0" stroke="#999" stroke-width="1.5"/>
+  <circle cx="298" cy="198" r="5" fill="#888888"/>
+  <!-- Wheel spokes front -->
+  <line x1="298" y1="184" x2="298" y2="212" stroke="#999" stroke-width="2"/>
+  <line x1="284" y1="198" x2="312" y2="198" stroke="#999" stroke-width="2"/>
+  <!-- Rear wheel -->
+  <circle cx="108" cy="198" r="34" fill="#111111"/>
+  <circle cx="108" cy="198" r="24" fill="#1E1E1E"/>
+  <circle cx="108" cy="198" r="14" fill="#D0D0D0" stroke="#999" stroke-width="1.5"/>
+  <circle cx="108" cy="198" r="5" fill="#888888"/>
+  <!-- Wheel spokes rear -->
+  <line x1="108" y1="184" x2="108" y2="212" stroke="#999" stroke-width="2"/>
+  <line x1="94" y1="198" x2="122" y2="198" stroke="#999" stroke-width="2"/>
+  <!-- Brand label -->
+  <rect x="100" y="218" width="200" height="26" rx="5" fill="rgba(0,0,0,0.4)"/>
+  <text x="200" y="233" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#E8A020" text-anchor="middle">Toyota Camry</text>
+  <text x="200" y="243" font-family="Arial,sans-serif" font-size="9" fill="#AAAAAA" text-anchor="middle">2024 · Седан</text>
+</svg>

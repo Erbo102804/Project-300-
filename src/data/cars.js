@@ -12,7 +12,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Седан',
     inStock: true,
-    image: 'https://placehold.co/400x250/1a1a2e/white?text=Toyota+Camry',
+    image: '/images/toyota-camry.svg',
     description: 'Надёжный семейный седан с отличным оснащением',
   },
   {
@@ -27,7 +27,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Внедорожник',
     inStock: true,
-    image: 'https://placehold.co/400x250/1a1a2e/white?text=BMW+X5',
+    image: '/images/bmw-x5.svg',
     description: 'Премиальный внедорожник с мощным двигателем',
   },
   {
@@ -42,7 +42,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Кроссовер',
     inStock: true,
-    image: 'https://placehold.co/400x250/1a1a2e/white?text=Hyundai+Tucson',
+    image: '/images/hyundai-tucson.svg',
     description: 'Современный кроссовер с богатым оснащением',
   },
   {
@@ -57,7 +57,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Седан',
     inStock: true,
-    image: 'https://placehold.co/400x250/1a1a2e/white?text=Mercedes+E-Class',
+    image: '/images/mercedes-e-class.svg',
     description: 'Эталон немецкого премиума и комфорта',
   },
   {
@@ -72,7 +72,7 @@ const initialCars = [
     transmission: 'Механика',
     bodyType: 'Кроссовер',
     inStock: true,
-    image: 'https://placehold.co/400x250/1a1a2e/white?text=Kia+Sportage',
+    image: '/images/kia-sportage.svg',
     description: 'Стильный и практичный городской кроссовер',
   },
   {
@@ -87,7 +87,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Кроссовер',
     inStock: true,
-    image: 'https://placehold.co/400x250/1a1a2e/white?text=VW+Tiguan',
+    image: '/images/vw-tiguan.svg',
     description: 'Немецкое качество в популярном кроссовере',
   },
   {
@@ -102,7 +102,7 @@ const initialCars = [
     transmission: 'Механика',
     bodyType: 'Седан',
     inStock: true,
-    image: 'https://placehold.co/400x250/1a1a2e/white?text=Lada+Vesta',
+    image: '/images/lada-vesta.svg',
     description: 'Доступный и практичный российский автомобиль',
   },
   {
@@ -117,7 +117,7 @@ const initialCars = [
     transmission: 'Автомат',
     bodyType: 'Внедорожник',
     inStock: false,
-    image: 'https://placehold.co/400x250/1a1a2e/white?text=Audi+Q7',
+    image: '/images/audi-q7.svg',
     description: 'Люксовый семиместный внедорожник quattro',
   },
 ];

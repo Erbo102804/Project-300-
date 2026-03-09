@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a18"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F5F5"/>
+      <stop offset="100%" stop-color="#D5D5D5"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EEEEEE"/>
+      <stop offset="100%" stop-color="#C8C8C8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="250" fill="url(#bg)"/>
+  <rect x="0" y="200" width="400" height="50" fill="#0d0d1a"/>
+  <ellipse cx="200" cy="201" rx="162" ry="7" fill="rgba(0,0,0,0.6)"/>
+  <!-- Lower body crossover -->
+  <rect x="38" y="142" width="324" height="58" rx="10" fill="url(#body)" stroke="#CCCCCC" stroke-width="1"/>
+  <!-- Cabin -->
+  <path d="M 80,142 L 93,100 L 308,100 L 325,142 Z" fill="url(#roof)" stroke="#CCCCCC" stroke-width="1"/>
+  <!-- Windows -->
+  <path d="M 97,140 L 107,105 L 188,105 L 188,140 Z" fill="#A8D8F0" opacity="0.82" stroke="#7BBAD4" stroke-width="1"/>
+  <path d="M 193,140 L 193,105 L 294,105 L 309,140 Z" fill="#A8D8F0" opacity="0.82" stroke="#7BBAD4" stroke-width="1"/>
+  <rect x="188" y="104" width="6" height="38" fill="#CCCCCC"/>
+  <!-- Chrome waist line -->
+  <rect x="38" y="157" width="324" height="3" rx="1" fill="#AAAAAA"/>
+  <!-- Door handles -->
+  <rect x="252" y="166" width="20" height="5" rx="2" fill="#AAAAAA"/>
+  <rect x="140" y="166" width="20" height="5" rx="2" fill="#AAAAAA"/>
+  <!-- Roof rails -->
+  <rect x="93" y="97" width="215" height="4" rx="2" fill="#CCCCCC"/>
+  <!-- Headlights VW style -->
+  <path d="M 350,143 L 362,140 L 362,158 L 350,162 Z" fill="#FFFFBB" opacity="0.95"/>
+  <rect x="336" y="140" width="16" height="3" rx="1" fill="#FFFFFF" opacity="0.9"/>
+  <!-- Taillights -->
+  <rect x="38" y="145" width="10" height="18" rx="2" fill="#DD2222" opacity="0.9"/>
+  <rect x="39" y="149" width="6" height="10" rx="1" fill="#FF4444" opacity="0.65"/>
+  <!-- Front wheel -->
+  <circle cx="302" cy="199" r="35" fill="#111111"/>
+  <circle cx="302" cy="199" r="25" fill="#1E1E1E"/>
+  <circle cx="302" cy="199" r="14" fill="#D0D0D0" stroke="#999" stroke-width="1.5"/>
+  <circle cx="302" cy="199" r="5" fill="#888888"/>
+  <line x1="302" y1="185" x2="302" y2="213" stroke="#999" stroke-width="1.5"/>
+  <line x1="288" y1="199" x2="316" y2="199" stroke="#999" stroke-width="1.5"/>
+  <!-- Rear wheel -->
+  <circle cx="105" cy="199" r="35" fill="#111111"/>
+  <circle cx="105" cy="199" r="25" fill="#1E1E1E"/>
+  <circle cx="105" cy="199" r="14" fill="#D0D0D0" stroke="#999" stroke-width="1.5"/>
+  <circle cx="105" cy="199" r="5" fill="#888888"/>
+  <line x1="105" y1="185" x2="105" y2="213" stroke="#999" stroke-width="1.5"/>
+  <line x1="91" y1="199" x2="119" y2="199" stroke="#999" stroke-width="1.5"/>
+  <!-- Brand label -->
+  <rect x="100" y="218" width="200" height="26" rx="5" fill="rgba(0,0,0,0.4)"/>
+  <text x="200" y="233" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#E8A020" text-anchor="middle">Volkswagen Tiguan</text>
+  <text x="200" y="243" font-family="Arial,sans-serif" font-size="9" fill="#AAAAAA" text-anchor="middle">2024 · Кроссовер</text>
+</svg>

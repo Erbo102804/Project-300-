@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0a0a18"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3060A8"/>
+      <stop offset="100%" stop-color="#1A3A70"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A52A0"/>
+      <stop offset="100%" stop-color="#142D60"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="250" fill="url(#bg)"/>
+  <!-- Ground -->
+  <rect x="0" y="200" width="400" height="50" fill="#0d0d1a"/>
+  <!-- Shadow -->
+  <ellipse cx="200" cy="201" rx="160" ry="7" fill="rgba(0,0,0,0.6)"/>
+  <!-- Lower body (long elegant sedan) -->
+  <rect x="40" y="150" width="320" height="50" rx="8" fill="url(#body)" stroke="#2255A0" stroke-width="1"/>
+  <!-- Cabin (sleek roofline) -->
+  <path d="M 110,150 L 125,110 L 282,110 L 302,150 Z" fill="url(#roof)" stroke="#2255A0" stroke-width="1"/>
+  <!-- Windows -->
+  <path d="M 125,148 L 137,114 L 198,114 L 198,148 Z" fill="#88B8E0" opacity="0.75" stroke="#5090C8" stroke-width="1"/>
+  <path d="M 203,148 L 203,114 L 270,114 L 286,148 Z" fill="#88B8E0" opacity="0.75" stroke="#5090C8" stroke-width="1"/>
+  <!-- B-pillar -->
+  <rect x="198" y="113" width="6" height="37" fill="#1E3A80"/>
+  <!-- Chrome accent line -->
+  <rect x="40" y="158" width="320" height="2.5" rx="1" fill="#8899CC" opacity="0.8"/>
+  <!-- Door handles -->
+  <rect x="252" y="167" width="22" height="5" rx="2" fill="#4466AA"/>
+  <rect x="138" y="167" width="22" height="5" rx="2" fill="#4466AA"/>
+  <!-- Star emblem area (front hood center) -->
+  <circle cx="355" cy="148" r="5" fill="#C0C0C0" opacity="0.7"/>
+  <!-- Headlights -->
+  <path d="M 352,153 L 360,150 L 360,163 L 352,166 Z" fill="#FFFFCC" opacity="0.95"/>
+  <rect x="340" y="150" width="14" height="3" rx="1" fill="#FFFFFF" opacity="0.85"/>
+  <!-- Taillights -->
+  <rect x="40" y="154" width="10" height="15" rx="2" fill="#CC1111" opacity="0.9"/>
+  <rect x="41" y="158" width="6" height="7" rx="1" fill="#FF4444" opacity="0.7"/>
+  <!-- Front wheel -->
+  <circle cx="300" cy="198" r="34" fill="#111111"/>
+  <circle cx="300" cy="198" r="24" fill="#181818"/>
+  <circle cx="300" cy="198" r="13" fill="#C8C8C8" stroke="#999" stroke-width="1.5"/>
+  <circle cx="300" cy="198" r="4" fill="#777"/>
+  <!-- Spokes (Mercedes style) -->
+  <line x1="300" y1="185" x2="300" y2="211" stroke="#999" stroke-width="1.5"/>
+  <line x1="286" y1="198" x2="314" y2="198" stroke="#999" stroke-width="1.5"/>
+  <line x1="290" y1="188" x2="310" y2="208" stroke="#999" stroke-width="1.5"/>
+  <line x1="310" y1="188" x2="290" y2="208" stroke="#999" stroke-width="1.5"/>
+  <!-- Rear wheel -->
+  <circle cx="110" cy="198" r="34" fill="#111111"/>
+  <circle cx="110" cy="198" r="24" fill="#181818"/>
+  <circle cx="110" cy="198" r="13" fill="#C8C8C8" stroke="#999" stroke-width="1.5"/>
+  <circle cx="110" cy="198" r="4" fill="#777"/>
+  <line x1="110" y1="185" x2="110" y2="211" stroke="#999" stroke-width="1.5"/>
+  <line x1="96" y1="198" x2="124" y2="198" stroke="#999" stroke-width="1.5"/>
+  <line x1="100" y1="188" x2="120" y2="208" stroke="#999" stroke-width="1.5"/>
+  <line x1="120" y1="188" x2="100" y2="208" stroke="#999" stroke-width="1.5"/>
+  <!-- Brand label -->
+  <rect x="100" y="218" width="200" height="26" rx="5" fill="rgba(0,0,0,0.4)"/>
+  <text x="200" y="233" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#E8A020" text-anchor="middle">Mercedes E-Class</text>
+  <text x="200" y="243" font-family="Arial,sans-serif" font-size="9" fill="#AAAAAA" text-anchor="middle">2024 · Седан</text>
+</svg>
